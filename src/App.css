@@ -86,3 +86,14 @@
     left: 0px;
   }
 }
+
+
+.LeftSideNavCard::after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #03c0ff17;
+}

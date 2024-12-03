@@ -10,7 +10,7 @@ const LeftSite = (props) => {
     >
       {TailwindUiUXDataMAP.map((mainKey) => {
         return (
-          <>
+          <div key={1}>
             {mainKey.map((key) => {
               return (
                 <div key={key.id} id={key.tittle}>
@@ -23,17 +23,10 @@ const LeftSite = (props) => {
                           onClick={() => {props.setViewCode(false)}}
                           className={({ isActive }) =>
                             isActive
-                              ? "flex border-[2px] border-[#03c0ff7a] shadow-[0px_0px_3px_0px_#00beffed] overflow-hidden rounded-[6px] cursor-pointer relative"
+                              ? "flex border-[2px] border-[#03c0ff7a] shadow-[0px_0px_3px_0px_#00beffed] overflow-hidden rounded-[6px] cursor-pointer relative LeftSideNavCard"
                               : "flex border-[2px] border-[#6365f100] shadow-[0px_0px_3px_0px_#0000004f] overflow-hidden rounded-[6px] cursor-pointer relative"
                           }
                         >
-                          <NavLink
-                          to={`/${key2.link}`}  className={({ isActive }) =>
-                            isActive
-                              ? "absolute top-0 left-0 w-full h-full bg-[#03c0ff17]"
-                              : "hidden"
-                          }></NavLink>
-
                           <img src={key2.image} className="select-none" alt="" />
                         </NavLink>
                       </div>
@@ -42,7 +35,7 @@ const LeftSite = (props) => {
                 </div>
               );
             })}
-          </>
+          </div>
         );
       })}
     </div>
