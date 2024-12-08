@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "./App.css";
-import TailwindUiUx from "./Components/tailwindUiUx/TailwindUiUx";
 import Navbar from "./Components/Navbar/Navbar";
 import { Route, Routes } from "react-router-dom";
 
@@ -96,7 +95,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "/header1",
+          link: "/",
           image: header1,
           innerValue: `
       <header class="text-gray-600 h-[100%] bg-white body-font">
@@ -4242,7 +4241,6 @@ function App() {
       ],
     },
   ];
-  const [navBarRightSideIcon, setnavBarRightSideIcon] = useState(false)
   const [copyCode, setCopyCode] = useState("");
   const [viewCode, setViewCode] = useState(false);
   const [showLeftNav, setshowLeftNav] = useState(true);
@@ -4255,7 +4253,6 @@ function App() {
         viewCode={viewCode}
         setshowLeftNav={setshowLeftNav}
         showLeftNav={showLeftNav}
-        navBarRightSideIcon={navBarRightSideIcon}
       />
 
       <LeftSite
@@ -4265,18 +4262,7 @@ function App() {
       />
 
       <Routes>
-        <Route
-          path="/"
-          element={
-            <TailwindUiUx
-              TailwindUiUXData={TailwindUiUXData}
-              showLeftNav={showLeftNav}
-              setViewCode={setViewCode}
-              setshowLeftNav={setshowLeftNav}
-              setnavBarRightSideIcon={setnavBarRightSideIcon}
-            />
-          }
-        />
+
         {TailwindUiUXData.map((mainKey) => {
           return (
             <>
@@ -4292,7 +4278,6 @@ function App() {
                         viewCode={viewCode}
                         showLeftNav={showLeftNav}
                         setshowLeftNav={setshowLeftNav}
-                        setnavBarRightSideIcon={setnavBarRightSideIcon}
                       />
                     }
                   />
