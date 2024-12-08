@@ -113,9 +113,9 @@
 }
 #title1{
     color: transparent;
-    background: url('./Image/backPink.png');
+    background: url('./Image/backPink2.png');
     -webkit-background-clip: text;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1px #03bfff;
     background-position: 0 0;
     animation: back1 20s linear infinite;
 }

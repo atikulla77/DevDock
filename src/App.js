@@ -86,6 +86,7 @@ import testimonial3 from "./Image/15TestimonialImage/Tastimonial3.png";
 import logo from "./Image/logo/logo2.png";
 import MainContentSection from "./Components/tailwindUiUx/MainContentSection";
 import LeftSite from "./Components/tailwindUiUx/LeftSite/LeftSite";
+import Lodding from "./Components/Lodding/Lodding";
 
 function App() {
   const TailwindUiUXData = [
@@ -4241,53 +4242,65 @@ function App() {
       ],
     },
   ];
+
   const [copyCode, setCopyCode] = useState("");
   const [viewCode, setViewCode] = useState(false);
   const [showLeftNav, setshowLeftNav] = useState(true);
 
+  const [showLodding, setshowLodding] = useState(true);
+
+  setTimeout(() => {
+    setshowLodding(false);
+  }, 2000);
+
   return (
-    <div className="bg-white w-full h-full relative">
-      <Navbar
-        copyCode={copyCode}
-        setViewCode={setViewCode}
-        viewCode={viewCode}
-        setshowLeftNav={setshowLeftNav}
-        showLeftNav={showLeftNav}
-      />
+    <>
+      {showLodding ? (
+        <Lodding />
+      ) : (
+        <div className="bg-white w-full h-full relative">
+          <Navbar
+            copyCode={copyCode}
+            setViewCode={setViewCode}
+            viewCode={viewCode}
+            setshowLeftNav={setshowLeftNav}
+            showLeftNav={showLeftNav}
+          />
 
-      <LeftSite
-        TailwindUiUXData={TailwindUiUXData}
-        setViewCode={setViewCode}
-        showLeftNav={showLeftNav}
-      />
+          <LeftSite
+            TailwindUiUXData={TailwindUiUXData}
+            setViewCode={setViewCode}
+            showLeftNav={showLeftNav}
+          />
 
-      <Routes>
-
-        {TailwindUiUXData.map((mainKey) => {
-          return (
-            <>
-              {mainKey.catagoryData.map((key) => {
-                return (
-                  <Route
-                    key={key.id}
-                    path={key.link}
-                    element={
-                      <MainContentSection
-                        InnerValueCode={key.innerValue}
-                        setCopyCode={setCopyCode}
-                        viewCode={viewCode}
-                        showLeftNav={showLeftNav}
-                        setshowLeftNav={setshowLeftNav}
+          <Routes>
+            {TailwindUiUXData.map((mainKey) => {
+              return (
+                <>
+                  {mainKey.catagoryData.map((key) => {
+                    return (
+                      <Route
+                        key={key.id}
+                        path={key.link}
+                        element={
+                          <MainContentSection
+                            InnerValueCode={key.innerValue}
+                            setCopyCode={setCopyCode}
+                            viewCode={viewCode}
+                            showLeftNav={showLeftNav}
+                            setshowLeftNav={setshowLeftNav}
+                          />
+                        }
                       />
-                    }
-                  />
-                );
-              })}
-            </>
-          );
-        })}
-      </Routes>
-    </div>
+                    );
+                  })}
+                </>
+              );
+            })}
+          </Routes>
+        </div>
+      )}
+    </>
   );
 }
 
