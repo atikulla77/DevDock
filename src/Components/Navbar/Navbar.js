@@ -32,9 +32,9 @@ const Navbar = (props) => {
             onClick={() => props.setshowLeftNav(true)}
               className={`${props.showLeftNav?"hidden":"flex"} text-[21px] text-[#fff] cursor-pointer mr-[8px]`}
             />
-            <NavLink to={"/"} className="flex items-center cursor-pointer">
+            <div className="flex items-center cursor-pointer">
               <img className="w-[7rem] select-none" src={logo} alt="" />
-            </NavLink>
+            </div>
           </div>
           <ul className={"flex"}>
             {/* Copy Code */}
