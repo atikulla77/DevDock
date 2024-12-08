@@ -23,8 +23,8 @@ const MainContentSection = (props) => {
           `}</code>
         </pre>
       </div> */}
-      <div className={`${props.viewCode ? "flex" : "hidden"} w-full pt-[65px] max-w-full h-full overflow-x-auto bg-[#F8F8FF]`}>
-        <SyntaxHighlighter language="javascript" style={docco}>{`
+      <div className={`${props.viewCode ? "flex" : "hidden"} w-full pt-[105px] max-w-full h-full overflow-x-auto bg-[#F8F8FF]`}>
+        <SyntaxHighlighter language="javascript" style={docco} className="[@media(min-width:510px)]:text-black text-[#000000d2] mt-[-2rem] [@media(min-width:510px)]:ml-[-1.3rem] ml-[-2rem] pr-[2rem] [@media(min-width:510px)]:text-[16px] text-[15px] [@media(min-width:510px)]:font-[500] font-[600]">{`
     <>
     ${props.InnerValueCode}
     </>
