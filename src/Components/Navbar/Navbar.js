@@ -36,7 +36,8 @@ const Navbar = (props) => {
               <img className="w-[7rem] select-none" src={logo} alt="" />
             </NavLink>
           </div>
-          <ul className="flex">
+          <ul className={props.navBarRightSideIcon? "flex" : "hidden"}></ul>
+          <ul className={props.navBarRightSideIcon? "flex" : "hidden"}>
             {/* Copy Code */}
             <CopyToClipboard text={props.copyCode}>
               <div className="relative">

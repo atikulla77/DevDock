@@ -4242,7 +4242,7 @@ function App() {
       ],
     },
   ];
-
+  const [navBarRightSideIcon, setnavBarRightSideIcon] = useState(false)
   const [copyCode, setCopyCode] = useState("");
   const [viewCode, setViewCode] = useState(false);
   const [showLeftNav, setshowLeftNav] = useState(true);
@@ -4255,6 +4255,7 @@ function App() {
         viewCode={viewCode}
         setshowLeftNav={setshowLeftNav}
         showLeftNav={showLeftNav}
+        navBarRightSideIcon={navBarRightSideIcon}
       />
 
       <LeftSite
@@ -4272,6 +4273,7 @@ function App() {
               showLeftNav={showLeftNav}
               setViewCode={setViewCode}
               setshowLeftNav={setshowLeftNav}
+              setnavBarRightSideIcon={setnavBarRightSideIcon}
             />
           }
         />
@@ -4290,6 +4292,7 @@ function App() {
                         viewCode={viewCode}
                         showLeftNav={showLeftNav}
                         setshowLeftNav={setshowLeftNav}
+                        setnavBarRightSideIcon={setnavBarRightSideIcon}
                       />
                     }
                   />

@@ -6,6 +6,7 @@ const MainContentSection = (props) => {
   // Set CopyButton Value
   useEffect(() => {
     props.setCopyCode(props.InnerValueCode)
+    props.setnavBarRightSideIcon(true)
   })
 
 

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { FaGithub } from "react-icons/fa6";
 import logo from "../../Image/logo/logoImg2.png";
 import beamshome from "../../Image/beams-home@95.jpg";
 import { Link } from "react-router-dom";
 
 const tailwindUiUx = (props) => {
+  // useEffect(() => {
+    props.setnavBarRightSideIcon(false)
+  // })
+  
   return (
     <div className="w-[100%] h-[100vh] flex bg-white relative">
       <div className="w-full h-full absolute top-0 left-0 z-[0]">
