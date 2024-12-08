@@ -19,7 +19,7 @@ const LeftSite = (props) => {
                     return (
                       <div key={key2.id} className="mb-[35px] ">
                         <NavLink
-                          to={`/${key2.link}`}
+                          to={`${key2.link}`}
                           onClick={() => {props.setViewCode(false)}}
                           className={({ isActive }) =>
                             isActive

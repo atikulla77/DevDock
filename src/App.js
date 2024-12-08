@@ -86,6 +86,7 @@ import testimonial3 from "./Image/15TestimonialImage/Tastimonial3.png";
 
 import logo from "./Image/logo/logo2.png";
 import MainContentSection from "./Components/tailwindUiUx/MainContentSection";
+import LeftSite from "./Components/tailwindUiUx/LeftSite/LeftSite";
 
 function App() {
   const TailwindUiUXData = [
@@ -95,7 +96,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "header1",
+          link: "/header1",
           image: header1,
           innerValue: `
       <header class="text-gray-600 h-[100%] bg-white body-font">
@@ -136,7 +137,7 @@ function App() {
         },
         {
           id: 2,
-          link: "header2",
+          link: "/header2",
           image: header2,
           innerValue: `
       <header class="text-gray-600 h-[100%] bg-white body-font">
@@ -177,7 +178,7 @@ function App() {
         },
         {
           id: 3,
-          link: "header3",
+          link: "/header3",
           image: header3,
           innerValue: `
       <header class="text-gray-600 h-[100%] bg-white body-font">
@@ -220,7 +221,7 @@ function App() {
         },
         {
           id: 4,
-          link: "header4",
+          link: "/header4",
           image: header4,
           innerValue: `
       <header class="text-gray-600 h-[100%] bg-white body-font">
@@ -267,7 +268,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "footer1",
+          link: "/footer1",
           image: footer1,
           innerValue: `
       <footer class="text-gray-600 h-[100%] bg-white body-font">
@@ -386,7 +387,7 @@ function App() {
         },
         {
           id: 2,
-          link: "footer2",
+          link: "/footer2",
           image: footer2,
           innerValue: `
       <footer class="text-gray-600 h-[100%] bg-white body-font">
@@ -505,7 +506,7 @@ function App() {
         },
         {
           id: 3,
-          link: "footer3",
+          link: "/footer3",
           image: footer3,
           innerValue: `
       <footer class="text-gray-600 body-font">
@@ -666,7 +667,7 @@ function App() {
         },
         {
           id: 4,
-          link: "footer4",
+          link: "/footer4",
           image: footer4,
           innerValue: `
       <footer class="text-gray-600 body-font">
@@ -708,7 +709,7 @@ function App() {
         },
         {
           id: 5,
-          link: "footer5",
+          link: "/footer5",
           image: footer5,
           innerValue: `
       <footer class="text-gray-600 body-font">
@@ -826,7 +827,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "content1",
+          link: "/content1",
           image: content1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -881,7 +882,7 @@ function App() {
         },
         {
           id: 2,
-          link: "content2",
+          link: "/content2",
           image: content2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -933,7 +934,7 @@ function App() {
         },
         {
           id: 3,
-          link: "content3",
+          link: "/content3",
           image: content3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1020,7 +1021,7 @@ function App() {
         },
         {
           id: 4,
-          link: "content4",
+          link: "/content4",
           image: content4,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1069,7 +1070,7 @@ function App() {
         },
         {
           id: 5,
-          link: "content5",
+          link: "/content5",
           image: content5,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1092,7 +1093,7 @@ function App() {
         },
         {
           id: 6,
-          link: "content6",
+          link: "/content6",
           image: content6,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1131,7 +1132,7 @@ function App() {
         },
         {
           id: 7,
-          link: "content7",
+          link: "/content7",
           image: content7,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1160,7 +1161,7 @@ function App() {
         },
         {
           id: 8,
-          link: "content8",
+          link: "/content8",
           image: content8,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1224,7 +1225,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "cta1",
+          link: "/cta1",
           image: cta1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1239,7 +1240,7 @@ function App() {
         },
         {
           id: 2,
-          link: "cta2",
+          link: "/cta2",
           image: cta2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1267,7 +1268,7 @@ function App() {
         },
         {
           id: 3,
-          link: "cta3",
+          link: "/cta3",
           image: cta3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1293,7 +1294,7 @@ function App() {
         },
         {
           id: 4,
-          link: "cta4",
+          link: "/cta4",
           image: cta4,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1335,7 +1336,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "ecommerce1",
+          link: "/ecommerce1",
           image: ecommerce1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1428,7 +1429,7 @@ function App() {
         },
         {
           id: 2,
-          link: "ecommerce2",
+          link: "/ecommerce2",
           image: ecommerce2,
           innerValue: `
       <section class="text-gray-600 body-font overflow-hidden">
@@ -1517,7 +1518,7 @@ function App() {
         },
         {
           id: 3,
-          link: "ecommerce3",
+          link: "/ecommerce3",
           image: ecommerce3,
           innerValue: `
       <section class="text-gray-600 body-font overflow-hidden">
@@ -1568,7 +1569,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "feature1",
+          link: "/feature1",
           image: feature1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1635,7 +1636,7 @@ function App() {
         },
         {
           id: 2,
-          link: "feature2",
+          link: "/feature2",
           image: feature2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1707,7 +1708,7 @@ function App() {
         },
         {
           id: 3,
-          link: "feature3",
+          link: "/feature3",
           image: feature3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1774,7 +1775,7 @@ function App() {
         },
         {
           id: 4,
-          link: "feature4",
+          link: "/feature4",
           image: feature4,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1824,7 +1825,7 @@ function App() {
         },
         {
           id: 5,
-          link: "feature5",
+          link: "/feature5",
           image: feature5,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1904,7 +1905,7 @@ function App() {
         },
         {
           id: 6,
-          link: "feature6",
+          link: "/feature6",
           image: feature6,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -1967,7 +1968,7 @@ function App() {
         },
         {
           id: 7,
-          link: "feature7",
+          link: "/feature7",
           image: feature7,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2039,7 +2040,7 @@ function App() {
         },
         {
           id: 8,
-          link: "feature8",
+          link: "/feature8",
           image: feature8,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2223,7 +2224,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "contact1",
+          link: "/contact1",
           image: contact1,
           innerValue: `
       <section class="text-gray-600 body-font relative">
@@ -2251,7 +2252,7 @@ function App() {
         },
         {
           id: 2,
-          link: "contact2",
+          link: "/contact2",
           image: contact2,
           innerValue: `
       <section class="text-gray-600 body-font relative">
@@ -2295,7 +2296,7 @@ function App() {
         },
         {
           id: 3,
-          link: "contact3",
+          link: "/contact3",
           image: contact3,
           innerValue: `
       <section class="text-gray-600 body-font relative">
@@ -2370,7 +2371,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "gallery1",
+          link: "/gallery1",
           image: gallery1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2409,7 +2410,7 @@ function App() {
         },
         {
           id: 2,
-          link: "gallery2",
+          link: "/gallery2",
           image: gallery2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2464,7 +2465,7 @@ function App() {
         },
         {
           id: 3,
-          link: "gallery3",
+          link: "/gallery3",
           image: gallery3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2547,7 +2548,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "blog1",
+          link: "/blog1",
           image: blog1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2647,7 +2648,7 @@ function App() {
         },
         {
           id: 2,
-          link: "blog2",
+          link: "/blog2",
           image: blog2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2738,7 +2739,7 @@ function App() {
         },
         {
           id: 3,
-          link: "blog3",
+          link: "/blog3",
           image: blog3,
           innerValue: `
       <section class="text-gray-600 body-font overflow-hidden">
@@ -2813,7 +2814,7 @@ function App() {
         },
         {
           id: 4,
-          link: "blog4",
+          link: "/blog4",
           image: blog4,
           innerValue: `
       <section class="text-gray-600 body-font overflow-hidden">
@@ -2874,7 +2875,7 @@ function App() {
         },
         {
           id: 5,
-          link: "blog5",
+          link: "/blog5",
           image: blog5,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2950,7 +2951,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "hero1",
+          link: "/hero1",
           image: hero1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2974,7 +2975,7 @@ function App() {
         },
         {
           id: 2,
-          link: "hero2",
+          link: "/hero2",
           image: hero2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -2994,7 +2995,7 @@ function App() {
         },
         {
           id: 3,
-          link: "hero3",
+          link: "/hero3",
           image: hero3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3018,7 +3019,7 @@ function App() {
         },
         {
           id: 4,
-          link: "hero4",
+          link: "/hero4",
           image: hero4,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3065,7 +3066,7 @@ function App() {
         },
         {
           id: 5,
-          link: "hero5",
+          link: "/hero5",
           image: hero5,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3112,7 +3113,7 @@ function App() {
         },
         {
           id: 6,
-          link: "hero6",
+          link: "/hero6",
           image: hero6,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3163,7 +3164,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "pricing1",
+          link: "/pricing1",
           image: pricing1,
           innerValue: `
       <section class="text-gray-600 body-font overflow-hidden">
@@ -3361,7 +3362,7 @@ function App() {
         },
         {
           id: 2,
-          link: "pricing2",
+          link: "/pricing2",
           image: pricing2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3441,7 +3442,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "statistic1",
+          link: "/statistic1",
           image: statistic1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3470,7 +3471,7 @@ function App() {
         },
         {
           id: 2,
-          link: "statistic2",
+          link: "/statistic2",
           image: statistic2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3506,7 +3507,7 @@ function App() {
         },
         {
           id: 3,
-          link: "statistic3",
+          link: "/statistic3",
           image: statistic3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3569,7 +3570,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "step1",
+          link: "/step1",
           image: step1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3655,7 +3656,7 @@ function App() {
         },
         {
           id: 2,
-          link: "step2",
+          link: "/step2",
           image: step2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3695,7 +3696,7 @@ function App() {
         },
         {
           id: 3,
-          link: "step3",
+          link: "/step3",
           image: step3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3782,7 +3783,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "team1",
+          link: "/team1",
           image: team1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -3880,7 +3881,7 @@ function App() {
         },
         {
           id: 2,
-          link: "team2",
+          link: "/team2",
           image: team2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -4005,7 +4006,7 @@ function App() {
         },
         {
           id: 3,
-          link: "team3",
+          link: "/team3",
           image: team3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -4136,7 +4137,7 @@ function App() {
       catagoryData: [
         {
           id: 1,
-          link: "testimonial1",
+          link: "/testimonial1",
           image: testimonial1,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -4180,7 +4181,7 @@ function App() {
         },
         {
           id: 2,
-          link: "testimonial2",
+          link: "/testimonial2",
           image: testimonial2,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -4200,7 +4201,7 @@ function App() {
         },
         {
           id: 3,
-          link: "testimonial3",
+          link: "/testimonial3",
           image: testimonial3,
           innerValue: `
       <section class="text-gray-600 body-font">
@@ -4256,6 +4257,12 @@ function App() {
         showLeftNav={showLeftNav}
       />
 
+      <LeftSite
+        TailwindUiUXData={TailwindUiUXData}
+        setViewCode={setViewCode}
+        showLeftNav={showLeftNav}
+      />
+
       <Routes>
         <Route
           path="/"
@@ -4264,33 +4271,33 @@ function App() {
               TailwindUiUXData={TailwindUiUXData}
               showLeftNav={showLeftNav}
               setViewCode={setViewCode}
+              setshowLeftNav={setshowLeftNav}
             />
           }
-        >
-          {TailwindUiUXData.map((mainKey) => {
-            return (
-              <>
-                {mainKey.catagoryData.map((key) => {
-                  return (
-                    <Route
-                      key={key.id}
-                      path={key.link}
-                      element={
-                        <MainContentSection
-                          InnerValueCode={key.innerValue}
-                          setCopyCode={setCopyCode}
-                          viewCode={viewCode}
-                          showLeftNav={showLeftNav}
-                          setshowLeftNav={setshowLeftNav}
-                        />
-                      }
-                    />
-                  );
-                })}
-              </>
-            );
-          })}
-        </Route>
+        />
+        {TailwindUiUXData.map((mainKey) => {
+          return (
+            <>
+              {mainKey.catagoryData.map((key) => {
+                return (
+                  <Route
+                    key={key.id}
+                    path={key.link}
+                    element={
+                      <MainContentSection
+                        InnerValueCode={key.innerValue}
+                        setCopyCode={setCopyCode}
+                        viewCode={viewCode}
+                        showLeftNav={showLeftNav}
+                        setshowLeftNav={setshowLeftNav}
+                      />
+                    }
+                  />
+                );
+              })}
+            </>
+          );
+        })}
       </Routes>
     </div>
   );

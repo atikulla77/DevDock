@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from "../../Image/logo/logoImg3.png";
 
 import { FaArrowLeft } from "react-icons/fa6";
@@ -32,9 +32,9 @@ const Navbar = (props) => {
             onClick={() => props.setshowLeftNav(true)}
               className={`${props.showLeftNav?"hidden":"flex"} text-[21px] text-[#fff] cursor-pointer mr-[8px]`}
             />
-            <Link to={"/"} className="flex items-center cursor-pointer">
+            <NavLink to={"/"} className="flex items-center cursor-pointer">
               <img className="w-[7rem] select-none" src={logo} alt="" />
-            </Link>
+            </NavLink>
           </div>
           <ul className="flex">
             {/* Copy Code */}
