@@ -82,6 +82,8 @@ import team3 from "./Image/14TeamImage/Team3.png";
 import testimonial1 from "./Image/15TestimonialImage/Tastimonial1.png";
 import testimonial2 from "./Image/15TestimonialImage/Tastimonial2.png";
 import testimonial3 from "./Image/15TestimonialImage/Tastimonial3.png";
+// ---------Component
+import component1 from "./Image/0Components/Component1.png";
 
 import logo from "./Image/logo/logo2.png";
 import MainContentSection from "./Components/tailwindUiUx/MainContentSection";
@@ -90,6 +92,67 @@ import Lodding from "./Components/Lodding/Lodding";
 
 function App() {
   const TailwindUiUXData = [
+    {
+      id: 0,
+      tittle: "Component",
+      catagoryData: [
+        {
+          id: 1,
+          link: "/component1",
+          image: component1,
+          innerValue: `
+      <main class="text-gray-600 h-[100%] bg-white body-font">
+        <div class="mx-auto xl:w-[1230px] w-[96%] relative z-[1] flex flex-col justify-center items-center">
+          <div class="flex flex-wrap w-[100%] mx-auto">
+            <div class="[@media(min-width:420px)]:w-[370px] w-[300px] [@media(min-width:420px)]:my-[20px] my-[10px] mx-auto">
+              <div class="[@media(min-width:420px)]:w-[350px] w-[300px] mx-auto overflow-hidden bg-[#ffffff] shadow-[0px_0px_3px_0px_#0000003d]">
+                <div class="w-[100%] [@media(min-width:420px)]:h-[13.5rem] h-[12.5rem] overflow-hidden relative">
+                  <img src="https://kitoo-zeta.vercel.app/static/media/blog.46d72ede6a5876d76652.jpg" class="w-[100%]" alt="" />
+                  <div class="absolute bottom-0 right-0 text-center w-[85px] py-[5px] bg-[#ffffff] z-10">
+                    <p class="text-[12px] font-[500] text-black">22 Oct, 20</p>
+                  </div>
+                </div>
+                <div class="text-left [@media(min-width:420px)]:px-[20px] px-[15px] [@media(min-width:420px)]:pt-[8px] pt-[5px] [@media(min-width:420px)]:pb-[20px] pb-[10px] text-black">
+                  <h1 class="[@media(min-width:420px)]:text-[20px] text-[16px] [@media(min-width:420px)]:pt-[15px] pt-[8px] font-[600]">How i became a Web Designer</h1>
+                  <p class="[@media(min-width:420px)]:text-[0.9rem] text-[13px] my-[10px] text-[#1f1f1fe0]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="[@media(min-width:420px)]:w-[370px] w-[300px] [@media(min-width:420px)]:my-[20px] my-[10px] mx-auto">
+              <div class="[@media(min-width:420px)]:w-[350px] w-[300px] mx-auto overflow-hidden bg-[#ffffff] shadow-[0px_0px_3px_0px_#0000003d]">
+                <div class="w-[100%] [@media(min-width:420px)]:h-[13.5rem] h-[12.5rem] overflow-hidden relative">
+                  <img src="https://kitoo-zeta.vercel.app/static/media/blog.46d72ede6a5876d76652.jpg" class="w-[100%]" alt="" />
+                  <div class="absolute bottom-0 right-0 text-center w-[85px] py-[5px] bg-[#ffffff] z-10">
+                    <p class="text-[12px] font-[500] text-black">22 Oct, 20</p>
+                  </div>
+                </div>
+                <div class="text-left [@media(min-width:420px)]:px-[20px] px-[15px] [@media(min-width:420px)]:pt-[8px] pt-[5px] [@media(min-width:420px)]:pb-[20px] pb-[10px] text-black">
+                  <h1 class="[@media(min-width:420px)]:text-[20px] text-[16px] [@media(min-width:420px)]:pt-[15px] pt-[8px] font-[600]">How i became a Web Designer</h1>
+                  <p class="[@media(min-width:420px)]:text-[0.9rem] text-[13px] my-[10px] text-[#1f1f1fe0]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                </div>
+              </div>
+            </div>
+            <div class="[@media(min-width:420px)]:w-[370px] w-[300px] [@media(min-width:420px)]:my-[20px] my-[10px] mx-auto">
+              <div class="[@media(min-width:420px)]:w-[350px] w-[300px] mx-auto overflow-hidden bg-[#ffffff] shadow-[0px_0px_3px_0px_#0000003d]">
+                <div class="w-[100%] [@media(min-width:420px)]:h-[13.5rem] h-[12.5rem] overflow-hidden relative">
+                  <img src="https://kitoo-zeta.vercel.app/static/media/blog.46d72ede6a5876d76652.jpg" class="w-[100%]" alt="" />
+                  <div class="absolute bottom-0 right-0 text-center w-[85px] py-[5px] bg-[#ffffff] z-10">
+                    <p class="text-[12px] font-[500] text-black">22 Oct, 20</p>
+                  </div>
+                </div>
+                <div class="text-left [@media(min-width:420px)]:px-[20px] px-[15px] [@media(min-width:420px)]:pt-[8px] pt-[5px] [@media(min-width:420px)]:pb-[20px] pb-[10px] text-black">
+                  <h1 class="[@media(min-width:420px)]:text-[20px] text-[16px] [@media(min-width:420px)]:pt-[15px] pt-[8px] font-[600]">How i became a Web Designer</h1>
+                  <p class="[@media(min-width:420px)]:text-[0.9rem] text-[13px] my-[10px] text-[#1f1f1fe0]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo quam, eum alias id, repellendus magni, quas.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+          `,
+        },
+      ],
+    },
     {
       id: 1,
       tittle: "Header",

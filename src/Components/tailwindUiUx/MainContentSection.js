@@ -10,7 +10,7 @@ const MainContentSection = (props) => {
 
 
   return (
-    <div onClick={() => {props.setshowLeftNav(false)}} className={`w-[100%] h-[100vh] min-h-[100vh] overflow-y-auto ${props.viewCode ? "bg-[#F8F8FF]" : `pt-[105px] bg-[#fff]`} ${props.showLeftNav ? "[@media(min-width:650px)]:pl-[160px] pl-0" : ""}`}>
+    <div onClick={() => {props.setshowLeftNav(false)}} className={`w-[100%] h-[100vh] min-h-[100vh] Poppins overflow-y-auto ${props.viewCode ? "bg-[#F8F8FF]" : `pt-[105px] bg-[#fff]`} ${props.showLeftNav ? "[@media(min-width:650px)]:pl-[160px] pl-0" : ""}`}>
       <div className={`${props.viewCode ? "hidden" : "w-full h-full"}`} dangerouslySetInnerHTML={{ __html: props.InnerValueCode }}></div>
 
       {/* {document} */}
